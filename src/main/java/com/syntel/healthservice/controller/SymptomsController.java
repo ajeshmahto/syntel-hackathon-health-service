@@ -33,7 +33,7 @@ public class SymptomsController {
 		 return new ResponseEntity<Response>(response,HttpStatus.OK);
 	}
 	
-	@RequestMapping(value="/sympotoms", method=RequestMethod.POST)
+	@RequestMapping(value="/symptoms", method=RequestMethod.POST)
 	public ResponseEntity<Response> getSymptoms(@RequestBody Symptoms symptoms){
 		Symptoms symptomsResult = new Symptoms();
 		symptomsResult = symptomsRepository.findOne(symptoms.getSymptomName());
@@ -50,7 +50,7 @@ public class SymptomsController {
 	}
 	
 	
-	@RequestMapping(value="/saveSympotoms", method=RequestMethod.POST)
+	@RequestMapping(value="/saveSymptoms", method=RequestMethod.POST)
 	public ResponseEntity<Response> saveSymptoms(@RequestBody Symptoms symptoms){
 		 symptomsRepository.save(symptoms);
 		 Response response = new Response();

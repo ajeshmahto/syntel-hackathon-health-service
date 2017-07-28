@@ -8,7 +8,8 @@ public class Symptoms {
 	@Id
 	private String symptomName;
 	private String symptomType;
-	private String sympotmDetails;
+	private String symptomDetails;
+	private String symptomRemedy;
 	
 	public String getSymptomName() {
 		return symptomName;
@@ -22,11 +23,18 @@ public class Symptoms {
 	public void setSymptomType(String symptomType) {
 		this.symptomType = symptomType;
 	}
-	public String getSympotmDetails() {
-		return sympotmDetails;
+	
+	public String getSymptomDetails() {
+		return symptomDetails;
 	}
-	public void setSympotmDetails(String sympotmDetails) {
-		this.sympotmDetails = sympotmDetails;
+	public void setSymptomDetails(String symptomDetails) {
+		this.symptomDetails = symptomDetails;
+	}
+	public String getSymptomRemedy() {
+		return symptomRemedy;
+	}
+	public void setSymptomRemedy(String symptomRemedy) {
+		this.symptomRemedy = symptomRemedy;
 	}
 	
 	
